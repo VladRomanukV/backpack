@@ -9,6 +9,12 @@
 	margin: 0 auto
 	align-items center
 	padding 100px 0
+	&-right
+		&__block
+			padding 10px 10px 0 0
+	&-left
+		&__block
+			padding 10px 0 0 10px
 	&-left, &-right
 		flex-direction column
 		&__block
@@ -18,11 +24,12 @@
 			font-size: 0
 			align-items flex-start
 			width 100%
+			overflow: hidden
 		&__textblock
 			display flex
 			flex-direction column
 		&__title
-			font-size 24px
+			font-size 20px
 			font-weight: bold
 			margin-bottom 10px
 			width 100%
@@ -33,7 +40,52 @@
 		&__img
 			display flex
 			align-self: center
-			margin-right 20px
+			margin 20px
 			img
 				align-self: center;
-	
+	&-center
+		position relative
+		&--one, &--two, &--three, &--fore, &--five, &--six
+			background rgba(255, 255, 255, 0);
+			width 20px
+			height 20px
+			border-radius 10px
+			cursor pointer
+			border 2px solid rgba(238, 238, 238, 0);
+			position absolute
+			transform scale(1.1)
+			&::before
+				content ''
+				width 10px
+				height 10px
+				background #d24a43
+				border-radius 10px
+				left: 3px
+				top 3px
+				position absolute
+		&--one:hover, &--two:hover, &--three:hover, &--fore:hover, &--five:hover, &--six:hover
+			border 2px solid #d24a43
+			transform scale(1.3)
+			transition-duration 1s
+		&--one
+			top 131px 
+			left: 141px
+		&--two
+			top 392px
+			left: 150px
+		&--three
+			top 530px
+			left 180px
+		&--fore
+			top 41px
+			right 161px
+		&--five
+			top 300px
+			right 175px
+		&--six
+			top 420px
+			right 100px
+.is-hover
+	background: #eee
+	border-radius 10px
+	box-shadow -3px 4px 1px 2px rgba(238, 238, 238, 0.5);
