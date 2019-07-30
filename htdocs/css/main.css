@@ -914,6 +914,18 @@ input {
 	text-align: center;
 }
 
+@media (max-width: 1500px) {
+
+.order-right__time {
+	width: 250px;
+}
+
+.order-right__btn {
+	width: 200px;
+}
+
+}
+
 
 .action {
 	width: 90%;
@@ -1579,6 +1591,18 @@ input {
 .order-right__btn:hover {
 	background: rgba(255,255,255,0.7);
 	color: #ce2020;
+}
+
+@media (max-width: 1500px) {
+
+.order-right__time {
+	width: 250px;
+}
+
+.order-right__btn {
+	width: 200px;
+}
+
 }
 
 
