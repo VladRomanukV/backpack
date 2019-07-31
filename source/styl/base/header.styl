@@ -1,6 +1,5 @@
 .header
 	background #e2e2e2
-	font-family 'RobotoBold'
 	&-conteiner
 		display flex
 		width 90%
@@ -30,3 +29,21 @@
 					background #f75e5e
 					a
 						color #fff
+@media (max-width: 900px) 
+	.header-logo
+		width 100%
+		img
+			width 250px
+			margin 0 auto
+			display block
+	.header-menu
+		width 100%
+		ul
+			justify-content center
+@media (max-width: 500px)
+	.header-menu
+		ul
+			li
+				display block
+				width 100%
+				text-align: center

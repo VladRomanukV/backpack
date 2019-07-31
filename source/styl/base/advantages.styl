@@ -20,7 +20,6 @@
 		&__block
 			display flex
 			margin-bottom 30px
-			display flex
 			font-size: 0
 			align-items flex-start
 			width 100%
@@ -89,3 +88,85 @@
 	background: #eee
 	border-radius 10px
 	box-shadow -3px 4px 1px 2px rgba(238, 238, 238, 0.5);
+@media (max-width: 1400px)
+	.advantages
+		width 98%
+		padding 50px 0
+		&-left, &-right
+			width 33%
+	.advantages-left__block
+		padding-bottom 10px
+@media (max-width: 1024px)
+		.advantages
+			position relative
+		.advantages-left__block, .advantages-right__block
+			display none
+@media (max-width: 500px)
+		.advantages-center
+			width 100%	
+			img
+				width 100%
+			&--one
+				top 91px 
+				left: 75px
+			&--two
+				top 192px
+				left: 80px
+			&--three
+				top 310px
+				left 80px
+			&--fore
+				top 19px
+				right 91px
+			&--five
+				top 140px
+				right 75px
+			&--six
+				top 270px
+				right 50px
+@media (max-width: 375px)
+		.advantages-center
+			width 100%	
+			img
+				width 100%
+			&--one
+				top 91px 
+				left: 75px
+			&--two
+				top 192px
+				left: 80px
+			&--three
+				top 250px
+				left 80px
+			&--fore
+				top 11px
+				right 91px
+			&--five
+				top 140px
+				right 75px
+			&--six
+				top 270px
+				right 50px
+@media (max-width: 325px)
+		.advantages-center
+			width 100%	
+			img
+				width 100%
+			&--one
+				top 61px 
+				left: 55px
+			&--two
+				top 152px
+				left: 50px
+			&--three
+				top 240px
+				left 60px
+			&--fore
+				top 11px
+				right 61px
+			&--five
+				top 150px
+				right 75px
+			&--six
+				top 200px
+				right 50px
