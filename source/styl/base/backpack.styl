@@ -10,6 +10,7 @@
 		padding 100px 0 50px 0
 		margin 0 auto
 		align-items center
+		flex-wrap wrap
 	&-left
 		&__headline
 			color #f75e5e
@@ -34,3 +35,20 @@
 				width 70%
 				margin 0 auto
 				display block
+@media (max-width: 1324px)
+	.backpack-right__item
+		padding 40px
+@media (max-width: 900px)
+	.backpack-conteiner
+		flex-direction column
+	.backpack-left
+		margin-bottom 30px
+@media (max-width: 800px)
+	.backpack-right
+		width 60%
+@media (max-width: 500px)
+	.backpack-right
+		width 75%
+@media (max-width: 500px)
+	.backpack-right
+		width 85%

@@ -340,6 +340,7 @@ input {
 	justify-content: space-around;
 	margin: 0 auto;
 	padding: 100px 0;
+	flex-wrap: wrap;
 }
 
 .action-left {
@@ -393,6 +394,7 @@ input {
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .description-left {
@@ -460,6 +462,7 @@ input {
 	margin: 0 auto;
 	align-items: center;
 	padding: 100px 0;
+	flex-wrap: wrap;
 }
 
 .advantages-right__block {
@@ -616,6 +619,7 @@ input {
 	padding: 100px 0 50px 0;
 	margin: 0 auto;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .backpack-left__headline {
@@ -661,6 +665,7 @@ input {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .clock-left__headline {
@@ -703,6 +708,7 @@ input {
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -736,6 +742,7 @@ input {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -857,6 +864,7 @@ input {
 	width: 90%;
 	margin: 0 auto;
 	padding: 100px 0 50px 0;
+	flex-wrap: wrap;
 }
 
 .deliver-headline {
@@ -912,6 +920,7 @@ input {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
+	flex-wrap: wrap;
 }
 
 .footer-img {
@@ -960,6 +969,10 @@ input {
 
 .description-conteiner {
 	align-items: center;
+}
+
+.backpack-right__item {
+	padding: 40px;
 }
 
 }
@@ -1035,6 +1048,22 @@ input {
 
 .action-left img {
 	width: 100%;
+}
+
+.backpack-conteiner {
+	flex-direction: column;
+}
+
+.backpack-left {
+	margin-bottom: 30px;
+}
+
+}
+
+@media (max-width: 800px) {
+
+.backpack-right {
+	width: 60%;
 }
 
 }
@@ -1157,6 +1186,14 @@ input {
 	right: 50px;
 }
 
+.backpack-right {
+	width: 75%;
+}
+
+.backpack-right {
+	width: 85%;
+}
+
 }
 
 @media (max-width: 425px) {
@@ -1256,12 +1293,98 @@ input {
 }
 
 
+@font-face {
+	font-family: 'Freight';
+	src: url("../fonts/Freight/Freight-TextBoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Freight/Freight-TextBoldItalic.woff") format('woff'), url("../fonts/Freight/Freight-TextBoldItalic.ttf") format('truetype'), url("../fonts/Freight/Freight-TextBoldItalic.svg#Freight-TextBoldItalic") format('svg');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'RobotoBold';
+	src: url("../fonts/Roboto/Roboto-BoldCondensed.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto/Roboto-BoldCondensed.woff") format('woff'), url("../fonts/Roboto/Roboto-BoldCondensed.ttf") format('truetype'), url("../fonts/Roboto/Roboto-BoldCondensed.svg#Roboto-BoldCondensed") format('svg');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'RobotoLight';
+	src: url("../fonts/Roboto-lightRobotoCondensed-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-lightRobotoCondensed-Light.woff") format('woff'), url("../fonts/Roboto-lightRobotoCondensed-Light.ttf") format('truetype'), url("../fonts/Roboto-lightRobotoCondensed-Light.svg#RobotoCondensed-Light") format('svg');
+	font-weight: light;
+	font-style: light;
+}
+
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url("../fonts/RobotoRegular/RobotoCondensed-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/RobotoRegular/RobotoCondensed-Regular.woff") format('woff'), url("../fonts/RobotoRegular/RobotoCondensed-Regular.ttf") format('truetype'), url("../fonts/RobotoRegular/RobotoCondensed-Regular.svg#RobotoCondensed-Regular") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GaramondBd';
+	src: url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.eot?#iefix") format('embedded-opentype'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.otf") format('opentype'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.woff") format('woff'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.ttf") format('truetype'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.svg#GaramondPremrPro-Bd") format('svg');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'RobotoLightItalic';
+	src: url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.woff") format('woff'), url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.ttf") format('truetype'), url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.svg#RobotoCondensed-LightItalic") format('svg');
+	font-weight: italic;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SourceBold';
+	src: url("../fonts/SoursSans/SourceSansPro-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/SoursSans/SourceSansPro-Bold.otf") format('opentype'), url("../fonts/SoursSans/SourceSansPro-Bold.woff") format('woff'), url("SourceSansPro-Bold.ttf") format('truetype'), url("../fonts/SoursSans/SourceSansPro-Bold.svg#SourceSansPro-Bold") format('svg');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'SourceSemibold';
+	src: url("../fonts/SoursSansPro/SourceSansPro-Semibold.eot?#iefix") format('embedded-opentype'), url("../fonts/SoursSansPro/SourceSansPro-Semibold.otf") format('opentype'), url("../fonts/SoursSansPro/SourceSansPro-Semibold.woff") format('woff'), url("../fonts/SoursSansPro/SourceSansPro-Semibold.ttf") format('truetype'), url("SourceSansPro-Semibold.svg#SourceSansPro-Semibold") format('svg');
+	font-weight: semibold;
+	font-style: semibold;
+}
+
+@font-face {
+	font-family: 'SourceRegular';
+	src: url("../fonts/SoursSansReg/SourceSansPro-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/SoursSansReg/SourceSansPro-Regular.otf") format('opentype'), url("../fonts/SoursSansReg/SourceSansPro-Regular.woff") format('woff'), url("../fonts/SoursSansReg/SourceSansPro-Regular.ttf") format('truetype'), url("SourceSansPro-Regular.svg#SourceSansPro-Regular") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ReklameRegular';
+	src: url("../fonts/reclameScript/ReklameScript-RegularDEMO.eot?#iefix") format('embedded-opentype'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.otf") format('opentype'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.woff") format('woff'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.ttf") format('truetype'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.svg#ReklameScript-RegularDEMO") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FranklinGothicBook';
+	src: url("../fonts/FranklinGothic-Book/FranklinGothic-Book.eot?#iefix") format('embedded-opentype'), url("../fonts/FranklinGothic-Book/FranklinGothic-Book.woff") format('woff'), url("../fonts/FranklinGothic-Book/FranklinGothic-Book.ttf") format('truetype'), url("../fonts/FranklinGothic-Book/FranklinGothic-Book.svg#FranklinGothic-Book") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RobotoBoldItalic';
+	src: url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.woff") format('woff'), url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.ttf") format('truetype'), url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.svg#Roboto-BoldItalic") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 .action {
 	width: 90%;
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
 	padding: 100px 0;
+	flex-wrap: wrap;
 }
 
 .action-left {
@@ -1359,6 +1482,7 @@ input {
 	margin: 0 auto;
 	align-items: center;
 	padding: 100px 0;
+	flex-wrap: wrap;
 }
 
 .advantages-right__block {
@@ -1779,6 +1903,7 @@ input {
 	padding: 100px 0 50px 0;
 	margin: 0 auto;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .backpack-left__headline {
@@ -1814,6 +1939,46 @@ input {
 	display: block;
 }
 
+@media (max-width: 1324px) {
+
+.backpack-right__item {
+	padding: 40px;
+}
+
+}
+
+@media (max-width: 900px) {
+
+.backpack-conteiner {
+	flex-direction: column;
+}
+
+.backpack-left {
+	margin-bottom: 30px;
+}
+
+}
+
+@media (max-width: 800px) {
+
+.backpack-right {
+	width: 60%;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.backpack-right {
+	width: 75%;
+}
+
+.backpack-right {
+	width: 85%;
+}
+
+}
+
 
 .clock {
 	background: #404040;
@@ -1825,6 +1990,7 @@ input {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .clock-left__headline {
@@ -1855,6 +2021,7 @@ input {
 	width: 90%;
 	margin: 0 auto;
 	padding: 100px 0 50px 0;
+	flex-wrap: wrap;
 }
 
 .deliver-headline {
@@ -1906,6 +2073,7 @@ input {
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .description-left {
@@ -2036,6 +2204,7 @@ input {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
+	flex-wrap: wrap;
 }
 
 .footer-img {
@@ -2147,6 +2316,7 @@ input {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -2450,6 +2620,7 @@ input {
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -2499,90 +2670,5 @@ input {
 	margin: 0 auto;
 	width: 50%;
 	display: block;
-}
-
-
-@font-face {
-	font-family: 'Freight';
-	src: url("../fonts/Freight/Freight-TextBoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Freight/Freight-TextBoldItalic.woff") format('woff'), url("../fonts/Freight/Freight-TextBoldItalic.ttf") format('truetype'), url("../fonts/Freight/Freight-TextBoldItalic.svg#Freight-TextBoldItalic") format('svg');
-	font-weight: bold;
-	font-style: bold;
-}
-
-@font-face {
-	font-family: 'RobotoBold';
-	src: url("../fonts/Roboto/Roboto-BoldCondensed.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto/Roboto-BoldCondensed.woff") format('woff'), url("../fonts/Roboto/Roboto-BoldCondensed.ttf") format('truetype'), url("../fonts/Roboto/Roboto-BoldCondensed.svg#Roboto-BoldCondensed") format('svg');
-	font-weight: bold;
-	font-style: bold;
-}
-
-@font-face {
-	font-family: 'RobotoLight';
-	src: url("../fonts/Roboto-lightRobotoCondensed-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-lightRobotoCondensed-Light.woff") format('woff'), url("../fonts/Roboto-lightRobotoCondensed-Light.ttf") format('truetype'), url("../fonts/Roboto-lightRobotoCondensed-Light.svg#RobotoCondensed-Light") format('svg');
-	font-weight: light;
-	font-style: light;
-}
-
-@font-face {
-	font-family: 'RobotoRegular';
-	src: url("../fonts/RobotoRegular/RobotoCondensed-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/RobotoRegular/RobotoCondensed-Regular.woff") format('woff'), url("../fonts/RobotoRegular/RobotoCondensed-Regular.ttf") format('truetype'), url("../fonts/RobotoRegular/RobotoCondensed-Regular.svg#RobotoCondensed-Regular") format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'GaramondBd';
-	src: url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.eot?#iefix") format('embedded-opentype'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.otf") format('opentype'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.woff") format('woff'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.ttf") format('truetype'), url("../fonts/Gramound-Premr/GaramondPremrPro-Bd.svg#GaramondPremrPro-Bd") format('svg');
-	font-weight: bold;
-	font-style: bold;
-}
-
-@font-face {
-	font-family: 'RobotoLightItalic';
-	src: url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.woff") format('woff'), url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.ttf") format('truetype'), url("../fonts/Roboto-Italick/RobotoCondensed-LightItalic.svg#RobotoCondensed-LightItalic") format('svg');
-	font-weight: italic;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'SourceBold';
-	src: url("../fonts/SoursSans/SourceSansPro-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/SoursSans/SourceSansPro-Bold.otf") format('opentype'), url("../fonts/SoursSans/SourceSansPro-Bold.woff") format('woff'), url("SourceSansPro-Bold.ttf") format('truetype'), url("../fonts/SoursSans/SourceSansPro-Bold.svg#SourceSansPro-Bold") format('svg');
-	font-weight: bold;
-	font-style: bold;
-}
-
-@font-face {
-	font-family: 'SourceSemibold';
-	src: url("../fonts/SoursSansPro/SourceSansPro-Semibold.eot?#iefix") format('embedded-opentype'), url("../fonts/SoursSansPro/SourceSansPro-Semibold.otf") format('opentype'), url("../fonts/SoursSansPro/SourceSansPro-Semibold.woff") format('woff'), url("../fonts/SoursSansPro/SourceSansPro-Semibold.ttf") format('truetype'), url("SourceSansPro-Semibold.svg#SourceSansPro-Semibold") format('svg');
-	font-weight: semibold;
-	font-style: semibold;
-}
-
-@font-face {
-	font-family: 'SourceRegular';
-	src: url("../fonts/SoursSansReg/SourceSansPro-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/SoursSansReg/SourceSansPro-Regular.otf") format('opentype'), url("../fonts/SoursSansReg/SourceSansPro-Regular.woff") format('woff'), url("../fonts/SoursSansReg/SourceSansPro-Regular.ttf") format('truetype'), url("SourceSansPro-Regular.svg#SourceSansPro-Regular") format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'ReklameRegular';
-	src: url("../fonts/reclameScript/ReklameScript-RegularDEMO.eot?#iefix") format('embedded-opentype'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.otf") format('opentype'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.woff") format('woff'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.ttf") format('truetype'), url("../fonts/reclameScript/ReklameScript-RegularDEMO.svg#ReklameScript-RegularDEMO") format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'FranklinGothicBook';
-	src: url("../fonts/FranklinGothic-Book/FranklinGothic-Book.eot?#iefix") format('embedded-opentype'), url("../fonts/FranklinGothic-Book/FranklinGothic-Book.woff") format('woff'), url("../fonts/FranklinGothic-Book/FranklinGothic-Book.ttf") format('truetype'), url("../fonts/FranklinGothic-Book/FranklinGothic-Book.svg#FranklinGothic-Book") format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'RobotoBoldItalic';
-	src: url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.woff") format('woff'), url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.ttf") format('truetype'), url("../fonts/Roboto-BoldItalic/Roboto-BoldItalic.ttfRoboto-BoldItalic.svg#Roboto-BoldItalic") format('svg');
-	font-weight: normal;
-	font-style: normal;
 }
 
