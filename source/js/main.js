@@ -17,6 +17,7 @@ $('.advantages-center--three').hover(function() {
 
 $('.advantages-center--fore').hover(function() {
 	$('.advantages-right--four').addClass('is-hover')
+	$('.advantages-right--four').css('display': 'block');
 }, function(){
 	$('.advantages-right--four').removeClass('is-hover')
 });
