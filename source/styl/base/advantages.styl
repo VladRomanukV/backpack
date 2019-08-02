@@ -92,6 +92,8 @@
 	background: #eee
 	border-radius 10px
 	box-shadow -3px 4px 1px 2px rgba(238, 238, 238, 0.5);
+.is-activ
+	display block
 @media (max-width: 1400px)
 	.advantages
 		width 98%
@@ -105,72 +107,60 @@
 			position relative
 		.advantages-left__block, .advantages-right__block
 			display none
+		.is-activ
+			display block
+		.is-hover
+			background rgba(238, 238, 238, 0.7);
+		.advantages-left
+			position absolute
+			z-index: 11
+			width 40%
+			left: 0
+		.advantages-right
+			position absolute
+			z-index: 11
+			width 40%
+			right: 0
+		.advantages-center
+			margin 0 auto
+			width auto
+			&--one, &--two, &--three, &--fore, &--five, &--six
+				z-index 1100
+			&--six
+				top 450px
+@media (max-width: 950px)
+	.advantages-center--six
+		top 500px
+@media (max-width: 800px)
+	.advantages-right
+		width 100%
+		bottom -10px
+	.advantages-left
+		width 100%
+		bottom -10px
 @media (max-width: 500px)
 		.advantages-center
 			width 100%	
 			img
 				width 100%
 			&--one
-				top 91px 
-				left: 75px
+				top 141px 
+				left: 135px
 			&--two
-				top 192px
-				left: 80px
+				top 242px
+				left: 135px
 			&--three
-				top 310px
-				left 80px
+				top 342px
+				left 145px
 			&--fore
-				top 19px
-				right 91px
+				top 49px
+				right 171px
 			&--five
 				top 140px
-				right 75px
+				right 135px
 			&--six
 				top 270px
-				right 50px
-@media (max-width: 375px)
-		.advantages-center
-			width 100%	
-			img
-				width 100%
-			&--one
-				top 91px 
-				left: 75px
-			&--two
-				top 192px
-				left: 80px
-			&--three
-				top 250px
-				left 80px
-			&--fore
-				top 11px
-				right 91px
-			&--five
-				top 140px
-				right 75px
-			&--six
-				top 270px
-				right 50px
-@media (max-width: 325px)
-		.advantages-center
-			width 100%	
-			img
-				width 100%
-			&--one
-				top 61px 
-				left: 55px
-			&--two
-				top 152px
-				left: 50px
-			&--three
-				top 240px
-				left 60px
-			&--fore
-				top 11px
-				right 61px
-			&--five
-				top 150px
-				right 75px
-			&--six
-				top 200px
-				right 50px
+				right 135px
+@media (max-width: 425px)
+	.advantages-center--fore
+		top 29px
