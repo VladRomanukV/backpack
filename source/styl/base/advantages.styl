@@ -138,29 +138,67 @@
 	.advantages-left
 		width 100%
 		bottom -10px
+	.is-activ.advantages-right__block, .is-activ.advantages-left__block
+		display flex
 @media (max-width: 500px)
-		.advantages-center
-			width 100%	
-			img
-				width 100%
-			&--one
-				top 141px 
-				left: 135px
-			&--two
-				top 242px
-				left: 135px
-			&--three
-				top 342px
-				left 145px
-			&--fore
-				top 49px
-				right 171px
-			&--five
-				top 140px
-				right 135px
-			&--six
-				top 270px
-				right 135px
+	.is-activ.advantages-left__block
+		flex-direction column
+	.advantages-left__img, .advantages-right__img
+		margin 10px auto 0 auto
+	.is-activ.advantages-right__block
+		flex-direction column-reverse
+	.advantages-center
+		width 100%	
+		img
+			width 100%
+		&--one
+			top 141px 
+			left: 135px
+		&--two
+			top 242px
+			left: 135px
+		&--three
+			top 342px
+			left 145px
+		&--fore
+			top 49px
+			right 171px
+		&--five
+			top 140px
+			right 135px
+		&--six
+			top 270px
+			right 135px
 @media (max-width: 425px)
 	.advantages-center--fore
 		top 29px
+	.advantages-left__title, .advantages-right__title
+		font-size 17px
+	.advantages-left__text, .advantages-right__text
+		font-size 16px
+	.advantages-left__img, .advantages-right__img
+		margin 10px auto 0 auto
+@media (max-width: 375px)
+	.advantages-center--three
+		top 302px
+		left 135px
+@media (max-width: 360px)
+	.advantages-center
+		&--one
+			top 91px
+			left 105px
+		&--two
+			top 172px
+			left 105px
+		&--three
+			top 185px
+			left 148px
+		&--four
+			top 24px
+			right 101px
+		&--five
+			top 91px
+			right 105px
+		&--six
+			top 172px
+			right 105px
