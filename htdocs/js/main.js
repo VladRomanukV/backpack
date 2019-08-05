@@ -1,4 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+$(function() {
 // is-hover
 var w = $(window).outerWidth();
 
@@ -72,4 +73,17 @@ $('.advantages-center--six').hover(function() {
 		};
 });
 // is-hover
+
+// Modal window
+	$('.js-btn').on('click', function() {
+		$('.modal, .overley').addClass('is-modl');
+		$('html, body').css('overflow-y', 'hidden');
+	});
+
+	$('.close, .overley').on('click', function() {
+		$('.modal, .overley').removeClass('is-modl');
+		$('html, body').css({'-webkit-overflow-y': 'initial', 'overflow-y': 'visible'});
+	})
+// Modal window
+});
 },{}]},{},[1])

@@ -1,3 +1,4 @@
+$(function() {
 // is-hover
 var w = $(window).outerWidth();
 
@@ -71,3 +72,16 @@ $('.advantages-center--six').hover(function() {
 		};
 });
 // is-hover
+
+// Modal window
+	$('.js-btn').on('click', function() {
+		$('.modal, .overley').addClass('is-modl');
+		$('html, body').css('overflow-y', 'hidden');
+	});
+
+	$('.close, .overley').on('click', function() {
+		$('.modal, .overley').removeClass('is-modl');
+		$('html, body').css({'-webkit-overflow-y': 'initial', 'overflow-y': 'visible'});
+	})
+// Modal window
+});
