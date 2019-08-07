@@ -13,6 +13,8 @@
 		img
 			width 30%
 	&-menu
+		&--burger
+			display none
 		width 50%
 		ul
 			display -webkit-flex
@@ -43,7 +45,25 @@
 			justify-content center
 @media (max-width: 500px)
 	.header-menu
+		&--burger
+			font-family 20px
+			text-transform uppercase
+			color #3d3d3d
+			position relative
+			padding 10px 0
+			cursor pointer
+			overflow hidden
+			width 100%
+			display block
+			&::before
+				content '\2630'
+				width 10px
+				height 10px
+				position absolute
+				right 7px
+				font-size 20px
 		ul
+			display none
 			li
 				display block
 				width 100%

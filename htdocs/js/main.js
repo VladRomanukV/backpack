@@ -85,5 +85,11 @@ $('.advantages-center--six').hover(function() {
 		$('html, body').css({'-webkit-overflow-y': 'initial', 'overflow-y': 'visible'});
 	})
 // Modal window
+
+// Burger Menu
+	$('.header-menu--burger').on('click', function(){
+		$('.header-menu--list').slideToggle();
+	});
+// Burger Menu
 });
 },{}]},{},[1])

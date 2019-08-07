@@ -261,6 +261,10 @@ input {
 	width: 50%;
 }
 
+.header-menu--burger {
+	display: none;
+}
+
 .header-menu ul {
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1356,6 +1360,14 @@ input {
 	padding-top: 10px;
 }
 
+.reviews {
+	padding: 50px 0;
+}
+
+.reviews-slider__block {
+	width: 100%;
+}
+
 .modal {
 	width: 98%;
 	margin: 0 auto;
@@ -1370,6 +1382,31 @@ input {
 }
 
 @media (max-width: 500px) {
+
+.header-menu--burger {
+	font-family: 20px;
+	text-transform: uppercase;
+	color: #3d3d3d;
+	position: relative;
+	padding: 10px 0;
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+
+.header-menu--burger::before {
+	content: '\2630';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 7px;
+	font-size: 20px;
+}
+
+.header-menu ul {
+	display: none;
+}
 
 .header-menu ul li {
 	display: block;
@@ -2589,6 +2626,10 @@ input {
 	width: 50%;
 }
 
+.header-menu--burger {
+	display: none;
+}
+
 .header-menu ul {
 	display: -moz-flex;
 	display: -ms-flex;
@@ -2637,6 +2678,31 @@ input {
 }
 
 @media (max-width: 500px) {
+
+.header-menu--burger {
+	font-family: 20px;
+	text-transform: uppercase;
+	color: #3d3d3d;
+	position: relative;
+	padding: 10px 0;
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+
+.header-menu--burger::before {
+	content: '\2630';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 7px;
+	font-size: 20px;
+}
+
+.header-menu ul {
+	display: none;
+}
 
 .header-menu ul li {
 	display: block;
@@ -3079,6 +3145,18 @@ input {
 .reviews-slider__text {
 	color: #404040;
 	line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+
+.reviews {
+	padding: 50px 0;
+}
+
+.reviews-slider__block {
+	width: 100%;
+}
+
 }
 
 
