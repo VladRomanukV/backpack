@@ -237,6 +237,7 @@ input {
 
 .header {
 	background: #e2e2e2;
+	width: 100%;
 }
 
 .header-conteiner {
@@ -388,6 +389,7 @@ input {
 .description {
 	background: #3b3b3b;
 	color: #fff;
+	width: 100%;
 }
 
 .description-conteiner {
@@ -621,6 +623,7 @@ input {
 
 .backpack {
 	background: #404040;
+	width: 100%;
 }
 
 .backpack-conteiner {
@@ -675,6 +678,7 @@ input {
 .clock {
 	background: #404040;
 	padding: 100px 0 50px 0;
+	width: 100%;
 }
 
 .clock-conteiner {
@@ -750,6 +754,7 @@ input {
 .order {
 	background: #404040;
 	padding: 100px 0 50px 0;
+	width: 100%;
 }
 
 .order-conteiner {
@@ -919,6 +924,7 @@ input {
 	background: #131313;
 	padding: 50px 0;
 	color: #fff;
+	width: 100%;
 }
 
 .footer-conteiner {
@@ -944,6 +950,18 @@ input {
 	text-align: center;
 }
 
+.overley {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	overflow-y: hidden;
+	z-index: 998;
+	display: none;
+}
+
 .modal {
 	width: 500px;
 	position: fixed;
@@ -956,18 +974,6 @@ input {
 
 .modal-wrap {
 	padding: 10px 20px;
-}
-
-.overley {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.7);
-	overflow-y: hidden;
-	z-index: 998;
-	display: none;
 }
 
 .is-modl {
@@ -1348,6 +1354,17 @@ input {
 
 .description-left__img {
 	padding-top: 10px;
+}
+
+.modal {
+	width: 98%;
+	margin: 0 auto;
+	left: 1%;
+}
+
+.close {
+	top: -12px;
+	right: -3px;
 }
 
 }
@@ -2113,6 +2130,7 @@ input {
 
 .backpack {
 	background: #404040;
+	width: 100%;
 }
 
 .backpack-conteiner {
@@ -2209,6 +2227,7 @@ input {
 .clock {
 	background: #404040;
 	padding: 100px 0 50px 0;
+	width: 100%;
 }
 
 .clock-conteiner {
@@ -2348,6 +2367,7 @@ input {
 .description {
 	background: #3b3b3b;
 	color: #fff;
+	width: 100%;
 }
 
 .description-conteiner {
@@ -2475,6 +2495,7 @@ input {
 	background: #131313;
 	padding: 50px 0;
 	color: #fff;
+	width: 100%;
 }
 
 .footer-conteiner {
@@ -2544,6 +2565,7 @@ input {
 
 .header {
 	background: #e2e2e2;
+	width: 100%;
 }
 
 .header-conteiner {
@@ -2625,6 +2647,17 @@ input {
 }
 
 
+.overley {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	overflow-y: hidden;
+	z-index: 998;
+	display: none;
+}
 
 .modal {
 	width: 500px;
@@ -2638,18 +2671,6 @@ input {
 
 .modal-wrap {
 	padding: 10px 20px;
-}
-
-.overley {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.7);
-	overflow-y: hidden;
-	z-index: 998;
-	display: none;
 }
 
 .is-modl {
@@ -2673,10 +2694,26 @@ input {
 	background: #f00;
 }
 
+@media (max-width: 600px) {
+
+.modal {
+	width: 98%;
+	margin: 0 auto;
+	left: 1%;
+}
+
+.close {
+	top: -12px;
+	right: -3px;
+}
+
+}
+
 
 .order {
 	background: #404040;
 	padding: 100px 0 50px 0;
+	width: 100%;
 }
 
 .order-conteiner {
@@ -3049,6 +3086,7 @@ input {
 	background: url("../img/video-img/bg-video.jpg") center no-repeat;
 	background-size: cover;
 	padding: 100px 0 50px 0;
+	width: 100%;
 }
 
 .video-headline {
