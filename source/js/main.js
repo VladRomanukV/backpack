@@ -102,4 +102,29 @@ $(function() {
 		return false;
 });
 // Ancor Link 
+// FORM
+$(document).ready(function(){
+		if(cartinfo.country == 'RU'){
+			$("input[name='tel']").mask("+7(___)___-__-__");
+		} 
+		if(cartinfo.country == 'KZ'){
+			$("input[name='tel']").mask("+7(___)___-__-__");
+		}
+		if(cartinfo.country == 'AZ'){
+			$("input[name='tel']").mask("+994(__)___-__-__");
+		}
+		if(cartinfo.country == 'AM'){
+			$("input[name='tel']").mask("+374(__)__-__-__");
+		}
+		if(cartinfo.country == 'BY'){
+			$("input[name='tel']").mask("+375(__)___-__-__");
+		}
+		if(cartinfo.country == 'KG'){
+			$("input[name='tel']").mask("+996(__)___-__-__");
+		}
+	});
+// FORM
+/*FORM2*/
+
+/*FORM2*/
 });

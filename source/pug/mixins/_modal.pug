@@ -1,5 +1,17 @@
 .overley
 .modal
 	.modal-wrap
-		iframe(src="http://m4.swissbag-1990.discountsalepro.com/?utm_source=mleads&utm_medium=44339&utm_campaign=0smkcwv&nc=true&mleads=1vEsreLjEVirYejsgoRn2O7L2V6NM67v&code=0smkcwv//&frdmn=a6d4ff36", frameborder="0")
+		form(action="/order.php" method="post" id="order_form" onsubmit="return cartTelCheck('phone', true, this, event);")
+			fieldset
+				.row
+					p Страна
+				span.country
+				.row
+					p Ваше ФИО
+					input(type="text" name="client")
+				.row
+					p Ваш телефон
+					input(type="text" name="tel" id="phone" placeholder="Номер телефона в межд. формате")
+				.row
+					input(type="submit" value="Заказать")
 	.close &times;
